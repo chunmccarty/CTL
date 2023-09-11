@@ -1,0 +1,55 @@
+Title: Indigency "Flowchart"
+Author: Caroline McCarty
+Description: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in Michigan.</p>
+
+
+Q(1): Are you currently serving a sentence in a correctional institution?
+A: YES
+	Q(1.1):You likely qualify for appointed counsel in Michigan. 
+A: NO
+	Q(1.2):Do you receive residential treatment in a mental health or substance abuse facility? 
+	A: YES
+		Q(1.2.1):GOTO:1.1
+	A: NO
+		Q(1.2.2):Do you receive income or funds from employment or another source?
+		A: YES
+			Q(1.2.2.1):Your case will be reviewed by the indigent criminal defense system for partially indigent status to determine your eligibility after considering all factors. If you are determined to be partially indigent, you will be notified of the amount you must contribute toward your appointed counsel.  
+		A: NO
+			Q(1.2.2.2):Are you receiving personal public assistance (Any of the following: food assistance, temporary assistance for needy families, Medicaid/disability insurance, public housing)?
+			A: YES
+				Q(1.2.2.2.1):GOTO:1.1
+			A: NO
+				Q(1.2.2.2.2):Do you earn less than $20,412 per year? 
+				A: YES
+					Q(1.2.2.2.2.1):GOTO:1.1
+				A: NO
+					Q(1.2.2.2.2.2):Do you own property with economic interest?
+					A: YES
+						Q(1.2.2.2.2.2.1):GOTO:1.2.2.1
+					A: NO
+						Q(1.2.2.2.2.2.2):Do you have any outstanding obligations?
+						A: YES
+							Q(1.2.2.2.2.2.2.1):Do you have any unemancipated children?
+							A: YES
+								Q(1.2.2.2.2.2.2.1.1):Are you currently employed? 
+								A: YES
+									Q(1.2.2.2.2.2.2.1.1.1):GOTO:1.2.2.1
+								A: NO
+									Q(1.2.2.2.2.2.2.1.1.2):Do you have any job training history? 							
+									A: YES
+										Q(1.2.2.2.2.2.2.1.1.2.1):GOTO:1.2.2.1
+									A: NO
+										Q(1.2.2.2.2.2.2.1.1.2.2):Do you have a high school educational level or higher? 
+										A: YES
+											Q(1.2.2.2.2.2.2.1.1.2.2.1):You are likely ineligible to receive appointed counsel, but can be reviewed by the indigent criminal defense system for partially indigent status.
+										A: NO
+											Q(1.2.2.2.2.2.2.1.1.2.2.2):GOTO:1.2.2.1
+							A: NO
+								Q(1.2.2.2.2.2.2.1.2):GTO:1.2.2.1
+						A: NO
+							Q(1.2.2.2.2.2.2.2):GOTO:1.2.2.1
+						
